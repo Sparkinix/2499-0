@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(50, 20px); /* Adjust for your grid size */
+    grid-gap: 1px;
+    margin: 20px auto;
+}
+
+.pixel {
+    width: 20px; /* Adjust for your pixel size */
+    height: 20px;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+
+.pixel.purchased {
+    background-color: #000; /* Black color for purchased pixels */
+}
+
+#purchase-form {
+    margin: 20px auto;
+    max-width: 300px;
+}
